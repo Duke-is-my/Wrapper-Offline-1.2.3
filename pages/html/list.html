@@ -20,15 +20,12 @@
 <body>
 
 <header>
-	<div>
-		<h1 style="margin:0"><img id="logo" src="../img/list_logo.png" alt="Wrapper: Offline"/></h1>
-		<div id="headbuttons">
-			<a href="/pages/html/listdark2.html" class="button_big">DARK MODE</a>
-			<a class="button_small" onclick="document.getElementById('file').click()">UPLOAD A MOVIE</a>
-			<div id="char_dropdown" class="button_small">
-				<div>Make A Character</div>
-				<menu>
-					<h2>Pick A Character Creator</h2>
+	<h1 style="margin:0"><img id="logo" src="../img/list_logo.png" alt="Wrapper: Online"/></h1>
+	<a href="./listdark.html"><span id="dark"></span></a>
+	<nav id="headbuttons">
+		<div class="dropdown_contain button_small">
+			<div class="dropdown_button">CREATE A CHARACTER</div>
+				<nav class="dropdown_menu">
 					<h2>Comedy World</h2>
 					<a href="/cc?themeId=family&bs=adam">Guy (Adam)</a>
 					<a href="/cc?themeId=family&bs=eve">Girl (Eve)</a>
@@ -45,6 +42,8 @@
 					<a href="/cc?themeId=cc2&bs=default">Lil Peepz</a>
 					<a href="/cc?themeId=chibi&bs=default">Chibi Peepz</a>
 					<a href="/cc?themeId=ninja&bs=default">Chibi Ninjas</a>
+				</nav>
+		</div>
 		<div class="dropdown_contain button_small">
 			<div class="dropdown_button">BROWSE CHARACTERS</div>
 				<nav class="dropdown_menu">
@@ -54,11 +53,13 @@
 					<a href="/cc_browser?themeId=cc2">Lil' Peepz</a>
 					<a href="/cc_browser?themeId=chibi">Chibi Peepz</a>
 					<a href="/cc_browser?themeId=ninja">Chibi Ninjas</a>
-				</menu>
-			</div>
-			<a href="/go_full" class="button_big">MAKE A VIDEO</a>
+				</nav>
 		</div>
-	</div>
+                            <a href="/pages/html/list.html" class="button_big">BACK TO W:O</a>
+                            <a href="/pages/html/videos.html" class="button_big">VIDEOLIST</a>
+                            <a href="/go_full?tray=custom&isWide=0" class="button_big">MAKE A WIDE</a>
+		            <a href="/go_full?tray=custom" class="button_big">MAKE A VIDEO</a>
+	</nav>
 </header>
 <table>
 	<thead>
